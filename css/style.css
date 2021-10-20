@@ -1,0 +1,1132 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+/* header */
+
+.header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    max-width: 1920px;
+    width: 100%;
+    height: 131px;
+    background-color: #6BC9BD;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    transition: .3s;
+}
+
+.js-header__dark{
+    background-color: #2C2C2C;
+}
+
+.header__container {
+    max-width: 1160px;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-logo {
+    margin-left: 30px;
+}
+
+.header__navigation {
+    max-width: 720px;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.navigation__list {
+    max-width: 470px;
+    width: 100%;
+    min-height: 24px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu:not(:last-child):after{
+    content: "";
+    margin-left: 28px;
+    margin-right: 25px;
+    width: 2px;
+    height: 24px;
+    background-color: #fff;
+    display: inline-block;
+    transform: rotate(17.79deg);
+}
+
+.js-header__dark .menu:not(:last-child):after{
+    background-color: #6BC9BD;
+}
+
+.menu__text {
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: #fff;
+    text-decoration: none;  
+    transition: .3s;
+    border-bottom: 2px solid transparent;
+}
+
+.menu__text:hover {
+    border-bottom: 2px solid #fff;
+    transition: .3s;
+}
+
+.header__toggle{
+    display: none;
+}
+
+.social-network {
+    max-width: 70px;
+    width: 100%;
+    min-height: 43px;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.social-network__icon{
+    fill: #fff;
+    transition: 0.3s;
+}
+
+.social-network__icon:hover{
+    fill: #2C2C2C;
+}
+
+
+.js-header__dark .social-network__icon:hover{
+    fill: #6BC9BD;
+}
+
+.social-network__icon-vk {
+    width: 34px;
+    height: 19.4px;
+}
+
+.social-network__icon-FB {
+    width: 16px;
+    height: 31px;
+}
+
+/* first-screen */
+
+.first-screen {
+    position: relative;
+    padding-top: 131px; 
+}
+
+.first-screen__slider {
+    width: 100%; 
+}
+
+.first-screen__slide {
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 363px; 
+}
+
+.first-screen__slide::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1; 
+}
+
+.first-screen__img {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1; 
+}
+
+.first-screen__text {
+    position: relative;
+    font-family: 'Uni Neue';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 120px;
+    line-height: 159px;
+    z-index: 6;
+    margin-top: 0;
+    margin-bottom: 42px;
+    padding-top: 125px;
+    text-transform: uppercase;  
+}
+
+.first-screen__description {
+    font-family: 'Uni Neue';
+    position: relative;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 48px;
+    letter-spacing: 1px;
+    z-index: 6;
+    text-transform: uppercase;
+    padding-left: 56px;
+    padding-right: 40px; 
+}
+
+.first-screen__wrapper {
+    position: relative;
+    max-width: 900px;
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+    z-index: 2; 
+}
+
+.first-screen__wrapper::after {
+    content: '';
+    max-width: 461px;
+    width: 100%;
+    min-height: 461px;
+    height: 100%;
+    position: absolute;
+    border-radius: 50%;
+    top: 66%;
+    left: 51%;
+    transform: translate(-50%, -50%);
+    background: rgba(107, 201, 189, 0.5);
+    z-index: 3; 
+}
+
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
+    margin-bottom: 50px;
+}
+  
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    background: #fff;
+    border-radius: 32.5px;
+    width: 15px;
+    height: 15px;
+    transition: 0.3s; 
+}
+  
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet:hover {
+    transform: scale(1.25); 
+}
+  
+.swiper-button {
+    top: 60%;
+    width: 36px;
+    height: 60px;
+    border: none;
+    z-index: 96;
+    position: absolute;
+    transform: translateY(-50%);
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 10px;
+    background-color: transparent; 
+}
+
+.swiper-slide{
+    border-bottom: 4px solid #6BC9BD;
+}
+
+.swiper-button:hover {
+    transform: scale(1.1) translateY(-50%); 
+}
+
+.swiper-button--next {
+    right: 1px;
+    background-image: url(../img/arrow-right.png);
+    background-size: cover;
+    margin-right: 20%;
+    transition: 0.3s; 
+}
+
+.swiper-button--prev {
+    left: 10px;
+    background-image: url(../img/arrow-left.png);
+    background-size: cover;
+    margin-left: 20%;
+    transition: 0.3s; 
+}
+  
+
+.swiper-modal{
+    position: relative;
+    z-index: 96;
+    display: block;
+    margin-bottom: 50px;
+    margin-top: -101px; 
+}
+
+.swiper-modal-btn{
+    background: rgba(107, 201, 189, 0.5);
+    height: 10px;
+    width: 257px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Uni Neue';
+    letter-spacing: 1.2px; 
+    color: #FFFFFF;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 48px;
+    text-decoration: none;
+    transition: 0.3s;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.swiper-modal-btn:hover{
+    font-size: 26px;
+}
+
+
+/* modal */
+
+.js-modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    z-index: 1001; 
+}
+.js-modal.active {
+    display: flex;
+    align-items: center; 
+}
+  
+.modal__form {
+    max-width: 550px;
+    width: 100%;
+    max-height: 455px;
+    height: 100%;
+    position: relative;
+    background: #2C2C2C;
+    border: 2px solid #6BC9BD;
+    text-align: center;
+    padding: 60px; 
+}
+  
+.modal__title {
+    text-align: center;
+    font-family: 'Uni Neue';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 32px;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 21px; 
+    color: #fff;
+}
+  
+.modal__close {
+    position: absolute;
+    top: 35px;
+    right: 35px;
+    transform: rotate(45deg);
+    cursor: pointer; 
+    z-index: 2;
+}
+
+.modal__close::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 38px;
+    height: 4px;
+    background-color: #6BC9BD;
+    transform: translate(-50%, -50%);
+}
+
+.modal__close::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 4px;
+    height: 38px;
+    background-color: #6BC9BD;
+    transform: translate(-50%, -50%);
+}
+  
+.modal__wrapper {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto; 
+}
+  
+.form__wrapper-password {
+    margin-bottom: 20px; 
+}
+  
+.form__wrapper-password, .form__name--modification {
+    width: 418px;
+}
+
+.form__wrapper-name{
+    text-align: start;
+    max-width: 418px;
+    width: 100%;
+}
+
+.form__wrapper-password{
+    text-align: start;
+    max-width: 418px;
+    width: 100%;
+    margin-top: 16px;
+}
+
+.form__label{
+    font-family: 'Uni Neue';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.05px;
+    color: #FFFFFF;
+}
+
+.form__input-name {
+    margin-top: 16px;
+}
+
+.form-btn__button{
+    background: rgba(107, 201, 189, 0.5);
+    height: 10px;
+    width: 165px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Uni Neue';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 48px;
+    letter-spacing: 1.2px;
+    color: #FFFFFF;
+    margin-left: 30%;
+    margin-top: 17%;
+    transition: .3s;
+}
+
+.form-btn__button:hover{
+    font-size: 26px;
+}
+
+/* description */
+.description {
+    max-width: 1920px;
+    width: 100%;
+    min-height: 714px;
+    height: 100%;
+    background-image: url(../img/descr@2x.png);
+    margin-top: 90px;
+}
+
+.img__blackout {
+    position: relative;
+}
+
+.img__blackout::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.description-box__name {
+    font-family: 'Uni Neue';
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 64px;
+    color: #FFFFFF;
+    padding-left: 50px;
+    z-index: 2;
+}
+
+.description-box__text{
+    max-width: 700px;
+    width: 100%;
+    font-family: 'Uni Neue';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    color: #FFFFFF;
+    margin-top: 58px;
+    margin-left: 50px;
+    z-index: 2;
+}
+
+.description-container {
+    max-width: 1190px;
+    width: 100%;
+    min-height: 376px;
+    height: 100%;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 185px;
+}
+
+.description-box{
+    max-width: 900px;
+    width: 100%;
+    min-height: 376px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.description-icon {
+    z-index: 2;
+}
+
+.change {
+    background-color: #2C2C2C;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* booking */
+
+.booking {
+    width: 100%;
+    background-color: #2C2C2C;
+    border-top: 4px solid #6BC9BD;
+}
+
+.booking__accordion {
+    width: 100%;
+    min-height: 1146px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 4px solid #6BC9BD;
+}
+
+.booking__accordion__name {
+    font-family: 'Uni Neue';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 60px;
+    line-height: 79px;
+    color: #FFFFFF;
+    margin-top: 50px;
+}
+
+.wrapper {
+    max-width: 1140px;
+    width: 100%;
+    min-height: 878px;
+    height: 100%;
+    margin-top: 55px;
+}
+
+.accordion {
+    border-bottom: 4px solid #6BC9BD;
+}
+
+.accordion-item__trigger {
+    padding: 31px;
+    border-top: 4px solid #6BC9BD;
+    border-left: 4px solid #6BC9BD;
+    border-right: 4px solid #6BC9BD;
+    font-family: 'Uni Neue';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
+    color: #FFFFFF;
+}
+
+.accordion-item__content {
+    padding: 35px;
+    border-right: 4px solid #6BC9BD;
+    border-left: 4px solid #6BC9BD;
+    border-bottom: 2px solid #6BC9BD;
+    border-top: none;
+    color: #FFFFFF;
+    display: none;
+}
+
+.active-accordion {
+    display: block;
+}
+.js-accordion-item--active .js-accordion-item__content {
+    display: block;
+}
+
+.accordion-item__box {
+    display: flex;
+}
+
+.accordion-item__name{
+    font-family: 'Uni Neue';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 48px;
+    letter-spacing: 1.2px;
+    color: #FFFFFF;
+}
+
+.accordion-item__name-choice {
+    font-family: 'Uni Neue';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 48px;
+    letter-spacing: 1.2px;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+    margin-left: 60px;
+    display: flex;
+}
+.accordion-item__name-choice__name{
+    font-family: 'Uni Neue';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 48px;
+    letter-spacing: 1.2px;
+    color: #FFFFFF;
+    margin-right: 13px;
+    text-transform: uppercase;
+}
+
+.accordion-item__application {
+    margin-top: 19px;
+    margin-left: 70px;
+}
+
+
+.accordion-item__application-button {
+    background: rgba(107, 201, 189, 0.5);
+    height: 10px;
+    max-width: 257px;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Uni Neue';
+    letter-spacing: 1.2px; 
+    color: #FFFFFF;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 48px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.accordion-item__application-button:hover {
+    font-size: 26px;
+}
+
+.accordion-item__name{
+    font-family: 'Uni Neue';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
+    color: #FFFFFF;  
+    display: flex;
+    align-items: center;  
+}
+
+.accordion-icon {
+    background-color: #6BC9BD;
+    max-width: 60px;
+    width: 100%;
+    min-height: 60px;
+    height: 100%;
+    border-radius: 50%;
+    margin-right: 30px;
+    position: relative;
+    display: block;
+    transition: .3s;
+}
+
+.accordion-icon:hover{
+    background-color: #fff;
+}
+
+.accordion-icon::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 28px;
+    height: 6px;
+    background-color: black;
+    transform: translate(-50%, -50%);
+}
+
+.accordion-icon::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 6px;
+    height: 28px;
+    background-color: black;
+    transform: translate(-50%, -50%);
+}
+
+.js-accordion-item--active .accordion-icon:before{
+    background-color: transparent;
+}
+
+/* registration */
+
+.form-window{
+    width: 100%;
+    min-height: 1040px;
+    height: 100%;
+    border-bottom: 4px solid #6BC9BD;
+    background-image: url(../img/registration.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0)
+}
+
+.form__name{
+    font-family: 'Uni Neue';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 60px;
+    line-height: 79px;
+    color: #FFFFFF;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    margin-top: 44px;
+}
+
+.form{
+    margin: 50px auto;
+    max-width: 550px;
+    width: 100%;
+    border: 2px solid #6BC9BD;
+    padding: 23px 65px 0px 65px;
+    background-color: #2C2C2C;
+    position: relative;
+    z-index: 2;
+}
+.form__title{
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+.form__input-item{
+    display: block;
+}
+
+
+.form__select {
+    width: 100%;
+    font-family: 'Uni Neue';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.05px;
+    color: #FFFFFF;   
+    padding: 9px 240px 16px 22px;
+    outline: none;
+    background: #2C2C2C;
+    border: 1px solid #FFFFFF;
+    cursor: pointer;
+}
+
+.form__span{
+    display: block;
+    margin-bottom: 16px;
+    margin-top: 16px;
+    font-family: 'Uni Neue';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.05px;
+    color: #FFFFFF; 
+}
+
+
+.gender-label__span { 
+    position: relative;
+    padding-left: 45px;
+    font-family: 'Uni Neue';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.05px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.gender-label__span:hover::before{
+    box-shadow: 1px 1px 3px #6BC9BD, -1px -1px 3px #6BC9BD;
+}
+
+.gender-label__span:nth-last-child(1) {
+    margin-right: 23px;
+}
+
+.gender-label__span::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 25px;
+    height: 25px;
+    border: 2px solid #6BC9BD;
+    border-radius: 85px;
+}
+
+.gender-label__span::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 11px;
+    margin: auto;
+    width: 7px;
+    height: 7px;
+    background-color: #fff;
+    display: none;
+    border-radius: 50%;
+}
+
+.visually-hidden:checked+.gender-label__span::after {
+    display: block;
+}
+
+.form_textarea {
+    width: 100%;
+    max-height: 98px;
+    height: 100%;
+    background: #2C2C2C;
+    border: 1px solid #FFFFFF;
+    font-family: 'Uni Neue';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.05px;
+    color: rgba(255, 255, 255, 0.2);
+    padding-left: 22px;
+    padding-top: 14px;
+    resize: none;
+    outline: none;
+}
+
+.error-text{
+    font-size: 16px;
+    color: red;
+}
+.Personal-Information {
+    display: flex;
+    width: 100%;
+    margin-top: 22px;
+}
+
+
+.Personal-Information__span{
+    position: relative;
+    padding-left: 45px;
+    font-family: 'Uni Neue';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.05px;
+    color: #FFFFFF;
+    display: block;
+    cursor: pointer;
+}
+
+.Personal-Information__span:hover:before{
+    box-shadow: 1px 1px 3px #6BC9BD, -1px -1px 3px #6BC9BD;
+}
+
+.Personal-Information__span::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 25px;
+    height: 25px;
+    border: 2px solid #6BC9BD;
+}
+
+.Personal-Information__span::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 8px;
+    bottom: 0;
+    width: 23px;
+    background: url(../img/checkmark.svg) center center no-repeat;
+    display: none;
+}
+
+.visually-hidden:checked+.Personal-Information__span:after{
+    display: block;
+}
+
+.form__input{
+    display: block;
+    outline: none;
+    border: 1px solid #FFFFFF;
+    padding: 9px 200px 16px 22px;
+    width: 100%;
+    font-size: inherit;
+    color: rgba(255, 255, 255, 0.2);
+    background-color: #2C2C2C;
+}
+.form__input.error-input{
+    border: 1px solid red;
+}
+
+.form__input-error{
+    display: block;
+    color: lightcoral;
+    font-size: 16px;
+}
+
+
+.form-application__button {
+    margin-left: 15%;
+    margin-top: 35px;
+    margin-bottom: 45px;
+}
+
+.form-application__submit{
+    background: rgba(107, 201, 189, 0.5);
+    height: 10px;
+    max-width: 257px;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Uni Neue';
+    letter-spacing: 1.2px; 
+    color: #FFFFFF;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 48px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.form__submit:hover{
+    font-size: 26px;
+}
+
+/* Contacts */
+
+.Contacts {
+    width: 100%;
+    background-color: #2C2C2C;
+    display: flex;
+    justify-content: center;
+}
+
+.Contacts__main {
+    max-width: 1140px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Contacts__container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    min-height: 300px;
+    height: 100%;
+    max-width: 274px;
+    width: 100%;
+}
+
+.Contacts__name {
+    font-family: 'Uni Neue';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 64px;
+    color: #FFFFFF;  
+}
+
+.Contacts__box {
+    width: 370px;
+    height: 41px;
+    display: flex;
+    align-items: center;
+}
+
+.Contacts__img-location {
+    width: 35px;
+    fill: #6BC9BD;
+}
+
+.Contacts__img-mail {
+    width: 35px;
+    fill: #6BC9BD;
+}
+
+.Contacts__img-phone {
+    width: 35px;
+    fill: #6BC9BD;
+}
+
+.Contacts-text {
+    max-width: 243px;
+    width: 100%;
+    margin-left: 28px;
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+
+.Contacts-text__tel{
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: .3s;
+}
+
+.Contacts-text__tel:hover {
+    border-bottom: 2px solid #fff;
+}
+
+.Contacts-text__mail{
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: .3s;
+}
+
+.Contacts-text__mail:hover {
+    border-bottom: 2px solid #fff;
+}
+
+.footer {
+    width: 100%;
+    height: 122px;
+    background-color: #6BC9BD;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-box {
+    width: 1140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-box__text {
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+
+.footer-box__text_kompaniya{
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+    text-decoration: none;
+    border-bottom: 2px transparent;
+}
+
+
+.footer-box__text_kompaniya:hover {
+    border-bottom: 2px solid #fff;
+    transition: .3s;
+}
+

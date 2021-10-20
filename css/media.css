@@ -1,0 +1,110 @@
+@media (max-width:1080px){
+    .social-network{
+        display: none;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1483px) {
+    .swiper-button--prev {
+          margin-left: 10%; 
+    }
+    .swiper-button--next {
+          margin-right: 10%; 
+    } 
+}
+
+@media (max-width:768px){
+    .main{
+        margin-top: 113px;
+        max-height: 408px;
+        height: 100%;
+    }
+    .header{
+        max-height: 113px;
+        height: 100%;
+    }
+    .header-logo__img{
+        max-width: 222px;
+        min-height: 50px;
+        height: 100%;
+    }
+    .social-network{
+        display: none;
+    }
+    .navigation__list{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .description-box__name{
+        font-size: 30px;
+        line-height: 40px;
+        padding-left: 0px;
+    }
+    .description-container{
+        padding-top: 64px;
+        padding-left: 30px;
+    }
+    .description-box__text{
+        font-size: 18px;
+        line-height: 30px;  
+        max-width: 395px;
+        width: 100%;
+        min-height: 262px;
+        height: 100%;
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+    .description{
+        min-height: 466px;
+        height: 100%;
+    }
+    .description-icon{
+        margin-right: 30px;
+    }
+
+    .booking__accordion__name{
+        font-size: 36px;
+        line-height: 48px; 
+        margin-top: 35px;
+    }
+    .wrapper{
+        margin-top: 35px;
+    }
+
+    .accordion{
+        max-width: 710px;
+        width: 100%;
+        margin: auto;
+    }
+    .accordion-item__name{
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+    }
+    .accordion-item__name-choice{
+        font-size: 18px;
+        line-height: 48px;
+    }
+    .accordion-item__application{
+        width: 177px;
+        height: 10px;
+    }
+    .accordion-item__application-button{
+        font-size: 18px;
+        line-height: 48px;
+        transition: .3s;
+    }
+    .accordion-item__application-button:hover{
+        font-size: 20px;
+    }
+    .form__name{
+        margin-top: 0px;
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .form{
+        max-width: 510px;
+        width: 100%;
+    }
+}

@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/media.css">
+    <title>CONCERT HOME</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__container">
+            <div class="header-logo">
+                <a href=""><img class="header-logo__img" src="img/logo@3x.png" alt=""></a>
+            </div>
+            <nav class="header__navigation navigation js-menu-content">
+                <ul class="navigation__list">
+                  <li class="menu js-menu-item">
+                      <a href="#about-us" class="menu__text">О НАС</a></li>
+                  <li class="menu js-menu-item">
+                      <a href="#price" class="menu__text">ПРЕДЛОЖЕНИЯ</a></li>
+                  <li class="menu js-menu-item">
+                      <a href="#contacts" class="menu__text">КОНТАКТЫ</a></li>
+                </ul>
+            </nav>
+            <button class="header__toggle js-menu-toggle">Toggle</button>
+            <div class="social-network">
+                <a href="https://www.facebook.com/?_rdr" target="blank" class="social-network__icon"><svg class="social-network__icon-FB">
+                    <use href="img/sprite.svg#FB"></use>
+                  </svg>
+                        </a>
+                <a href="https://vk.com/feed" target="blank" class="social-network__icon"><svg class="social-network__icon-vk">
+                    <use href="img/sprite.svg#VK"></use>
+                  </svg></a>
+            </div>
+        </div>
+    </header>
+
+    <div class="first-screen js-first-screen">
+        <div class="swiper first-screen__slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide first-screen__slide">
+              <div class="first-screen__wrapper">
+                <h2 class="first-screen__text">CONCERT HOME</h2>
+                <p class="first-screen__description">
+                  ТЕКСТ БАННЕРА МОЖЕТ ВКЛЮЧАТЬ В СЕБЯ НЕСКОЛЬКО ПРЕДЛОЖЕНИЙ.
+                  ВЫРАВНИВАНИЕ
+                  ПО ЦЕНТРУ. ТЕКСТОВЫЙ БЛОК НА ДЕСКТОПЕ
+                </p>
+              </div>
+              <img src="img/main.png" class="first-screen__img">
+            </div>
+            <div class="swiper-slide first-screen__slide">
+              <div class="first-screen__wrapper">
+                <h2 class="first-screen__text">CONCERT HOME</h2>
+                <p class="first-screen__description">
+                  ТЕКСТ БАННЕРА МОЖЕТ ВКЛЮЧАТЬ В СЕБЯ НЕСКОЛЬКО ПРЕДЛОЖЕНИЙ.
+                  ВЫРАВНИВАНИЕ
+                  ПО ЦЕНТРУ. ТЕКСТОВЫЙ БЛОК НА ДЕСКТОПЕ
+                </p>
+              </div>
+              <img src="img/main.png" class="first-screen__img">
+            </div>
+            <div class="swiper-slide first-screen__slide">
+              <div class="first-screen__wrapper">
+                <h2 class="first-screen__text">CONCERT HOME</h2>
+                <p class="first-screen__description">
+                  ТЕКСТ БАННЕРА МОЖЕТ ВКЛЮЧАТЬ В СЕБЯ НЕСКОЛЬКО ПРЕДЛОЖЕНИЙ.
+                  ВЫРАВНИВАНИЕ
+                  ПО ЦЕНТРУ. ТЕКСТОВЫЙ БЛОК НА ДЕСКТОПЕ
+                </p>
+              </div>
+              <img src="img/main.png" class="first-screen__img">
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-modal">
+            <button class="swiper-modal-btn js-open-modal">ОСТАВИТЬ ЗАЯВКУ</button>
+        </div>
+        <button class="swiper-button swiper-button--prev"></button>
+        <button class="swiper-button swiper-button--next"></button>
+    </div>
+    <div class="modal js-modal">
+        <div class="modal__wrapper">
+          <button class="modal__close js-close-modal"> </button>
+          <form action="#" class="modal__form form__form--modification js-modal-form">
+            <div class="modal__wrapper-content">
+              <h1 class="modal__title">Авторизация</h1>
+            </div>
+            <div class="form__wrapper-name form__name--modification">
+              <label class="form__label">
+                <span >Логин</span>
+                <input type="text" name="name" placeholder="Введите логин" class="form__input-name form__input js-field">
+              </label>
+            </div>
+            <div class="form__wrapper-password">
+              <label class="form__label">
+                <span>Пароль</span>
+                <input type="password" name="password" placeholder="Введите пароль" class="form__input-name form__input js-field">
+              </label>
+            </div>
+            <div class="form-btn__container">
+                <button class="form-btn__button">ОТПРАВИТЬ</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+    <section class="description img__blackout">
+            <div class="description-container">
+                <div class="description-box">
+                    <h2 class="description-box__name">ЗАГОЛОВОК</h2>
+                    <p class="description-box__text">Таким образом дальнейшее развитие различных форм 
+                        деятельности в значительной степени обуславливает создание 
+                        системы обучения кадров, соответствует насущным  
+                        потребностям. Задача организации, в особенности же рамки и  
+                        место обучения кадров в значительной степени обуславливает 
+                        создание системы обучения кадров, соответствует.</p>
+                </div>
+                <img class="description-icon" src="img/h@3x.png" alt="">
+            </div>
+    </section>
+    <section class="booking">
+        <div class="booking__accordion">
+            <h2 class="booking__accordion__name">НАШИ ПРЕДЛОЖЕНИЯ</h2>
+            <div class="wrapper">
+                <div class="accordion">
+                    <div class="accordion-item js-accordion-item ">
+                        <div class="accordion-item__trigger js-accordion-item__trigger ">
+                            <h2 class="accordion-item__name">
+                                <span class="accordion-icon"></span>
+                            Площадка 3.500 мест</h2>
+                        </div>
+                        <div class="accordion-item__content js-accordion-item__content ">
+                            <div class="accordion-item__box">
+                                <div class="accordion-item__box-wrapper">
+                                    <p class="accordion-item__name-choice "><strong class="accordion-item__name-choice__name">город:</strong>Город</p>
+                                    <p class="accordion-item__name-choice "><strong class="accordion-item__name-choice__name">цена:</strong>250 000</p>
+                                </div>
+                                <div class="accordion-item__box-wrapper">
+                                    <p class="accordion-item__name-choice "><strong class="accordion-item__name-choice__name ">площадь:</strong>1000 кв.м.</p>
+                                    <p class="accordion-item__name-choice "><strong class="accordion-item__name-choice__name">название:</strong>Название</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item__application">
+                                <button class="accordion-item__application-button">ЗАБРОНИРОВАТЬ</button>
+                           </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item js-accordion-item">
+                        <div class="accordion-item__trigger js-accordion-item__trigger open">
+                            <h2 class="accordion-item__name">
+                                <span class="accordion-icon"></span>
+                            Площадка 3.500 мест</h2>
+                        </div>
+                        <div class="accordion-item__content js-accordion-item__content">
+                            <div class="accordion-item__box">
+                                <div class="accordion-item__box-wrapper">
+                                    <p class="accordion-item__name-choice "><strong class="accordion-item__name-choice__name">город:</strong>Город</p>
+                                    <p class="accordion-item__name-choice "><strong class="accordion-item__name-choice__name">цена:</strong>250 000</p>
+                                </div>
+                                <div class="accordion-item__box-wrapper">
+                                    <p class="accordion-item__name-choice "><strong class="accordion-item__name-choice__name">площадь:</strong>1000 кв.м.</p>
+                                    <p class="accordion-item__name-choice "><strong class="accordion-item__name-choice__name">название:</strong>Название</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item__application">
+                                <button class="accordion-item__application-button">ЗАБРОНИРОВАТЬ</button>
+                           </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item js-accordion-item">
+                        <div class="accordion-item__trigger js-accordion-item__trigger">
+                            <h2 class="accordion-item__name">
+                                <span class="accordion-icon"></span>
+                            Площадка 3.500 мест</h2>
+                        </div>
+                        <div class="accordion-item__content js-accordion-item__content">
+                            <div class="accordion-item__box">
+                                <div class="accordion-item__box-wrapper">
+                                    <p class="accordion-item__name-choice "><strong class="accordion-item__name-choice__name">город:</strong>Город</p>
+                                    <p class="accordion-item__name-choice "><strong class="accordion-item__name-choice__name">цена:</strong>250 000</p>
+                                </div>
+                                <div class="accordion-item__box-wrapper">
+                                    <p class="accordion-item__name-choice "><strong class="accordion-item__name-choice__name">площадь:</strong>1000 кв.м.</p>
+                                    <p class="accordion-item__name-choice "><strong class="accordion-item__name-choice__name">название:</strong>Название</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item__application">
+                                <button class="accordion-item__application-button">ЗАБРОНИРОВАТЬ</button>
+                           </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item js-accordion-item">
+                        <div class="accordion-item__trigger js-accordion-item__trigger">
+                            <h2 class="accordion-item__name">
+                                <span class="accordion-icon"></span>
+                            Площадка 3.500 мест</h2>
+                        </div>
+                        <div class="accordion-item__content js-accordion-item__content">
+                            <div class="accordion-item__box">
+                                <div class="accordion-item__box-wrapper">
+                                    <p class="accordion-item__name-choice "><strong class="accordion-item__name-choice__name">город:</strong>Город</p>
+                                    <p class="accordion-item__name-choice "><strong class="accordion-item__name-choice__name">цена:</strong>250 000</p>
+                                </div>
+                                <div class="accordion-item__box-wrapper">
+                                    <p class="accordion-item__name-choice "><strong class="accordion-item__name-choice__name">площадь:</strong>1000 кв.м.</p>
+                                    <p class="accordion-item__name-choice "><strong class="accordion-item__name-choice__name">название:</strong>Название</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item__application">
+                                <button class="accordion-item__application-button">ЗАБРОНИРОВАТЬ</button>
+                           </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item js-accordion-item">
+                        <div class="accordion-item__trigger js-accordion-item__trigger">
+                            <h2 class="accordion-item__name">
+                                <span class="accordion-icon"></span>
+                            Площадка 3.500 мест</h2>
+                        </div>
+                        <div class="accordion-item__content js-accordion-item__content">
+                            <div class="accordion-item__box">
+                                <div class="accordion-item__box-wrapper">
+                                    <p class="accordion-item__name-choice "><strong class="accordion-item__name-choice__name">город:</strong>Город</p>
+                                    <p class="accordion-item__name-choice "><strong class="accordion-item__name-choice__name">цена:</strong>250 000</p>
+                                </div>
+                                <div class="accordion-item__box-wrapper">
+                                    <p class="accordion-item__name-choice "><strong class="accordion-item__name-choice__name">площадь:</strong>1000 кв.м.</p>
+                                    <p class="accordion-item__name-choice "><strong class="accordion-item__name-choice__name">название:</strong>Название</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item__application">
+                                <button class="accordion-item__application-button">ЗАБРОНИРОВАТЬ</button>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="form-window img__blackout">
+        <h2 class="form__name">ОСТАВЬТЕ ЗАЯВКУ</h2>
+        <form class="form js-form">
+            <label class="form__input-item">
+                <span class="form__span">Имя</span>
+                <input class="form__input" name="name" type="text" placeholder="Введите имя">
+            </label>
+            <label class="form__input-item">
+                <span class="form__span">Телефон</span>
+                <input class="form__input js-input-phone" name="tel" type="tel" placeholder="+7 (___) ___-__-__">
+            </label>
+            <label class="form__input-item">
+                <span class="form__span">Email:</span>
+                <input class="form__input" type="text" name="email" placeholder="example@mail.com">
+            </label>
+            <label class="form__input-item">
+                <span class="form__span">Выберите предложение:</span>
+                <select class="form__select">
+                    <option value="">Предложение 1</option>
+                    <option value="">Предложение 2</option>
+                    <option value="">Предложение 3</option>
+                    <option value="">Предложение 4</option>
+                    <option value="">Предложение 5</option>
+                </select>
+            </label>
+            <label class="form__input-item">
+                <span class="form__span">Пол:</span>
+                        <label class="gender-label">
+                            <input type="radio" name="gender" value="1" checked class="visually-hidden">
+                             <span class="gender-label__span"> Мужской </span>
+                        </label>
+                        <label class="gender-label">
+                            <input type="radio" name="gender" value="2"  class="visually-hidden">
+                            <span class="gender-label__span"> Женский </span>
+                        </label>
+            </label>
+            <div class="form__input-item">
+                <p class="form__span">Комментарий:</p>
+                <textarea cols="30" rows="10" class="form_textarea" placeholder="Введите комментарий..."></textarea>
+            </div>
+            <label class="Personal-Information">
+                <input class="form__input-checkbox visually-hidden" name="agree" type="checkbox">
+                <span class="Personal-Information__span">Я даю согласие на обработку персональных данных</span>
+            </label>
+            <div class="form-application__button">
+                <button class="form-application__submit">ОСТАВИТЬ ЗАЯВКУ</button>
+           </div>
+        </form>
+    </div>
+    <section class="Contacts">
+        <div class="Contacts__main">
+            <div class="Contacts__container">
+                <h2 class="Contacts__name">КОНТАКТЫ</h2>
+                <div class="Contacts__box">
+                    <svg class="Contacts__img-location">
+                        <use href="img/sprite.svg#location"></use>
+                      </svg>
+                    <p class="Contacts-text">ул. Арбат, 1а, Москва 119019, Россия</p>
+                </div>
+                <div class="Contacts__box">
+                    <svg class="Contacts__img-phone">
+                        <use href="img/sprite.svg#phone"></use>
+                      </svg>
+                    <p class="Contacts-text"><a href="tel:+7(495)000-00-00" class="Contacts-text__tel">+7(495) 000-00-00</a></p>
+                </div>
+                <div class="Contacts__box">
+                      <svg class="Contacts__img-mail">
+                        <use href="img/sprite.svg#mail"></use>
+                      </svg>
+                    <p class="Contacts-text"><a href="mailto:info@mysite.ru" class="Contacts-text__mail">info@mysite.ru</a></p>
+                </div>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d944.070647773578!2d37.59847481910036!3d55.75170860958257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a4d078690df%3A0x776cfe0f7ad0a8af!2z0YPQuy4g0JDRgNCx0LDRgiwgMdCwLCDQnNC-0YHQutCy0LAsIDExOTAxOQ!5e0!3m2!1sru!2sru!4v1633111927121!5m2!1sru!2sru" width="749" height="463" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-box">
+            <a href="#"><img src="img/logo@3x.png" alt=""></a>
+            <p class="footer-box__text">© 2019 Concert Home. Сайт создан в <a class="footer-box__text_kompaniya" target="blank" href="https://hawkingbros.com/">Hawking Bros.</a></p>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/accordion.js"></script>
+</body>
+</html>
