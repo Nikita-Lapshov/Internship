@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,7 +14,7 @@
     <header class="header">
         <div class="header__container">
             <div class="header-logo">
-                <a href=""><img class="header-logo__img" src="img/logo@3x.png" alt=""></a>
+                <img class="header-logo__img" src="img/logo@3x.png" alt="CONCERT HOME">
             </div>
             <nav class="header__navigation navigation js-menu-content">
                 <ul class="navigation__list">
@@ -41,41 +41,41 @@
 
     <div class="first-screen js-first-screen">
         <div class="swiper first-screen__slider">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide first-screen__slide">
-              <div class="first-screen__wrapper">
-                <h2 class="first-screen__text">CONCERT HOME</h2>
-                <p class="first-screen__description">
-                  ТЕКСТ БАННЕРА МОЖЕТ ВКЛЮЧАТЬ В СЕБЯ НЕСКОЛЬКО ПРЕДЛОЖЕНИЙ.
-                  ВЫРАВНИВАНИЕ
-                  ПО ЦЕНТРУ. ТЕКСТОВЫЙ БЛОК НА ДЕСКТОПЕ
-                </p>
-              </div>
-              <img src="img/main.png" class="first-screen__img">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide first-screen__slide">
+                    <div class="first-screen__wrapper">
+                      <h2 class="first-screen__text">CONCERT HOME</h2>
+                        <p class="first-screen__description">
+                          ТЕКСТ БАННЕРА МОЖЕТ ВКЛЮЧАТЬ В СЕБЯ НЕСКОЛЬКО ПРЕДЛОЖЕНИЙ.
+                          ВЫРАВНИВАНИЕ
+                          ПО ЦЕНТРУ. ТЕКСТОВЫЙ БЛОК НА ДЕСКТОПЕ
+                        </p>
+                    </div>
+                  <img src="img/main.png" class="first-screen__img" alt="Затемненное фото концерта с толпой людей">
+                </div>
+                <div class="swiper-slide first-screen__slide">
+                  <div class="first-screen__wrapper">
+                    <h2 class="first-screen__text">CONCERT HOME</h2>
+                      <p class="first-screen__description">
+                        ТЕКСТ БАННЕРА МОЖЕТ ВКЛЮЧАТЬ В СЕБЯ НЕСКОЛЬКО ПРЕДЛОЖЕНИЙ.
+                        ВЫРАВНИВАНИЕ
+                        ПО ЦЕНТРУ. ТЕКСТОВЫЙ БЛОК НА ДЕСКТОПЕ
+                      </p>
+                  </div>
+                  <img src="img/main.png" class="first-screen__img" alt="Затемненное фото концерта с толпой людей">
+                </div>
+                <div class="swiper-slide first-screen__slide">
+                  <div class="first-screen__wrapper">
+                    <h2 class="first-screen__text">CONCERT HOME</h2>
+                      <p class="first-screen__description">
+                        ТЕКСТ БАННЕРА МОЖЕТ ВКЛЮЧАТЬ В СЕБЯ НЕСКОЛЬКО ПРЕДЛОЖЕНИЙ.
+                        ВЫРАВНИВАНИЕ
+                        ПО ЦЕНТРУ. ТЕКСТОВЫЙ БЛОК НА ДЕСКТОПЕ
+                      </p>
+                  </div>
+                  <img src="img/main.png" class="first-screen__img" alt="Затемненное фото концерта с толпой людей">
+                </div>
             </div>
-            <div class="swiper-slide first-screen__slide">
-              <div class="first-screen__wrapper">
-                <h2 class="first-screen__text">CONCERT HOME</h2>
-                <p class="first-screen__description">
-                  ТЕКСТ БАННЕРА МОЖЕТ ВКЛЮЧАТЬ В СЕБЯ НЕСКОЛЬКО ПРЕДЛОЖЕНИЙ.
-                  ВЫРАВНИВАНИЕ
-                  ПО ЦЕНТРУ. ТЕКСТОВЫЙ БЛОК НА ДЕСКТОПЕ
-                </p>
-              </div>
-              <img src="img/main.png" class="first-screen__img">
-            </div>
-            <div class="swiper-slide first-screen__slide">
-              <div class="first-screen__wrapper">
-                <h2 class="first-screen__text">CONCERT HOME</h2>
-                <p class="first-screen__description">
-                  ТЕКСТ БАННЕРА МОЖЕТ ВКЛЮЧАТЬ В СЕБЯ НЕСКОЛЬКО ПРЕДЛОЖЕНИЙ.
-                  ВЫРАВНИВАНИЕ
-                  ПО ЦЕНТРУ. ТЕКСТОВЫЙ БЛОК НА ДЕСКТОПЕ
-                </p>
-              </div>
-              <img src="img/main.png" class="first-screen__img">
-            </div>
-          </div>
         </div>
         <div class="swiper-pagination"></div>
         <div class="swiper-modal">
@@ -84,31 +84,30 @@
         <button class="swiper-button swiper-button--prev"></button>
         <button class="swiper-button swiper-button--next"></button>
     </div>
-    <div class="modal js-modal">
-        <div class="modal__wrapper">
-          <button class="modal__close js-close-modal"> </button>
-          <form action="#" class="modal__form form__form--modification js-modal-form">
-            <div class="modal__wrapper-content">
-              <h1 class="modal__title">Авторизация</h1>
+    <div class="modal-Window js-Modal-Window">
+        <div class="modal-Window__content">
+            <button class="modal-Window__button-close js-close-Modal"></button>
+            <div class="modal__content js-modal">
+                <h2 class="modal__title">авторизация</h2>
+                <div class="modal-container">
+                    <label class="modal-container__label">
+                        <span class="modal-container__span">Логин</span>
+                        <input type="email" class="modal-container__input" placeholder="Введите логин">
+                    </label>
+                    <label class="modal-container__label">
+                        <span class="modal-container__span">Пароль</span>
+                        <input type="password" class="modal-container__input" placeholder="Введите пароль">
+                    </label>
+                </div>
+                <div class="modal-button__container">
+                    <button class="modal-button__button">ОТПРАВИТЬ</button>
+                </div>
             </div>
-            <div class="form__wrapper-name form__name--modification">
-              <label class="form__label">
-                <span >Логин</span>
-                <input type="text" name="name" placeholder="Введите логин" class="form__input-name form__input js-field">
-              </label>
-            </div>
-            <div class="form__wrapper-password">
-              <label class="form__label">
-                <span>Пароль</span>
-                <input type="password" name="password" placeholder="Введите пароль" class="form__input-name form__input js-field">
-              </label>
-            </div>
-            <div class="form-btn__container">
-                <button class="form-btn__button">ОТПРАВИТЬ</button>
-            </div>
-          </form>
         </div>
-      </div>
+    </div>
+    <div class="application">
+        <button class="application__button js-open-modal">ОСТАВИТЬ ЗАЯВКУ</button>
+    </div>
 
     <section class="description img__blackout">
             <div class="description-container">
@@ -121,7 +120,7 @@
                         место обучения кадров в значительной степени обуславливает 
                         создание системы обучения кадров, соответствует.</p>
                 </div>
-                <img class="description-icon" src="img/h@3x.png" alt="">
+                <img class="description-icon" src="img/h@3x.png" alt="Фотография с красивым логотипом названия компании Concert Home">
             </div>
     </section>
     <section class="booking">
@@ -243,24 +242,24 @@
             </div>
         </div>
     </section>
-    <div class="form-window img__blackout">
-        <h2 class="form__name">ОСТАВЬТЕ ЗАЯВКУ</h2>
-        <form class="form js-form">
-            <label class="form__input-item">
-                <span class="form__span">Имя</span>
-                <input class="form__input" name="name" type="text" placeholder="Введите имя">
+    <div class="registration-window img__blackout">
+        <h2 class="registration__name">ОСТАВЬТЕ ЗАЯВКУ</h2>
+        <form class="registration js-form">
+            <label class="registration__input-item">
+                <span class="registration__span">Имя</span>
+                <input class="registration__input" name="name" type="text" placeholder="Введите имя">
             </label>
-            <label class="form__input-item">
-                <span class="form__span">Телефон</span>
-                <input class="form__input js-input-phone" name="tel" type="tel" placeholder="+7 (___) ___-__-__">
+            <label class="registration__input-item">
+                <span class="registration__span">Телефон</span>
+                <input class="registration__input js-input-phone" name="tel" type="tel" placeholder="+7 (___) ___-__-__">
             </label>
-            <label class="form__input-item">
-                <span class="form__span">Email:</span>
-                <input class="form__input" type="text" name="email" placeholder="example@mail.com">
+            <label class="registration__input-item">
+                <span class="registration__span">Email:</span>
+                <input class="registration__input" type="text" name="email" placeholder="example@mail.com">
             </label>
-            <label class="form__input-item">
-                <span class="form__span">Выберите предложение:</span>
-                <select class="form__select">
+            <label class="registration__input-item">
+                <span class="registration__span">Выберите предложение:</span>
+                <select class="registration__select">
                     <option value="">Предложение 1</option>
                     <option value="">Предложение 2</option>
                     <option value="">Предложение 3</option>
@@ -268,51 +267,51 @@
                     <option value="">Предложение 5</option>
                 </select>
             </label>
-            <label class="form__input-item">
-                <span class="form__span">Пол:</span>
-                        <label class="gender-label">
-                            <input type="radio" name="gender" value="1" checked class="visually-hidden">
-                             <span class="gender-label__span"> Мужской </span>
-                        </label>
-                        <label class="gender-label">
-                            <input type="radio" name="gender" value="2"  class="visually-hidden">
-                            <span class="gender-label__span"> Женский </span>
-                        </label>
-            </label>
-            <div class="form__input-item">
-                <p class="form__span">Комментарий:</p>
-                <textarea cols="30" rows="10" class="form_textarea" placeholder="Введите комментарий..."></textarea>
+            <div class="registration__input-item">
+                <span class="registration__span">Пол:</span>
+                <label class="gender-label">
+                    <input type="radio" name="gender" value="1" checked class="visually-hidden">
+                    <span class="gender-label__span"> Мужской </span>
+                </label>
+                <label class="gender-label">
+                    <input type="radio" name="gender" value="2"  class="visually-hidden">
+                    <span class="gender-label__span"> Женский </span>
+                </label>
+            </div>
+            <div class="registration__input-item">
+                <p class="registration__span">Комментарий:</p>
+                <textarea cols="30" rows="10" class="registration_textarea" placeholder="Введите комментарий..."></textarea>
             </div>
             <label class="Personal-Information">
-                <input class="form__input-checkbox visually-hidden" name="agree" type="checkbox">
+                <input class="registration__input-checkbox visually-hidden" name="agree" type="checkbox">
                 <span class="Personal-Information__span">Я даю согласие на обработку персональных данных</span>
             </label>
-            <div class="form-application__button">
-                <button class="form-application__submit">ОСТАВИТЬ ЗАЯВКУ</button>
+            <div class="registration-application__button">
+                <button class="registration-application__submit">ОСТАВИТЬ ЗАЯВКУ</button>
            </div>
         </form>
     </div>
-    <section class="Contacts">
-        <div class="Contacts__main">
-            <div class="Contacts__container">
-                <h2 class="Contacts__name">КОНТАКТЫ</h2>
-                <div class="Contacts__box">
-                    <svg class="Contacts__img-location">
+    <section class="contacts">
+        <div class="contacts__main">
+            <div class="contacts__container">
+                <h2 class="contacts__name">КОНТАКТЫ</h2>
+                <div class="contacts__box">
+                    <svg class="contacts__img-location">
                         <use href="img/sprite.svg#location"></use>
                       </svg>
-                    <p class="Contacts-text">ул. Арбат, 1а, Москва 119019, Россия</p>
+                    <p class="contacts-text">ул. Арбат, 1а, Москва 119019, Россия</p>
                 </div>
-                <div class="Contacts__box">
-                    <svg class="Contacts__img-phone">
+                <div class="contacts__box">
+                    <svg class="contacts__img-phone">
                         <use href="img/sprite.svg#phone"></use>
                       </svg>
-                    <p class="Contacts-text"><a href="tel:+7(495)000-00-00" class="Contacts-text__tel">+7(495) 000-00-00</a></p>
+                    <p class="contacts-text"><a href="tel:+7(495)000-00-00" class="contacts-text__tel">+7(495) 000-00-00</a></p>
                 </div>
-                <div class="Contacts__box">
-                      <svg class="Contacts__img-mail">
+                <div class="contacts__box">
+                      <svg class="contacts__img-mail">
                         <use href="img/sprite.svg#mail"></use>
                       </svg>
-                    <p class="Contacts-text"><a href="mailto:info@mysite.ru" class="Contacts-text__mail">info@mysite.ru</a></p>
+                    <p class="contacts-text"><a href="mailto:info@mysite.ru" class="contacts-text__mail">info@mysite.ru</a></p>
                 </div>
             </div>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d944.070647773578!2d37.59847481910036!3d55.75170860958257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a4d078690df%3A0x776cfe0f7ad0a8af!2z0YPQuy4g0JDRgNCx0LDRgiwgMdCwLCDQnNC-0YHQutCy0LAsIDExOTAxOQ!5e0!3m2!1sru!2sru!4v1633111927121!5m2!1sru!2sru" width="749" height="463" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
@@ -326,7 +325,7 @@
     </footer>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="js/header.js"></script>
-    <script src="js/main.js"></script>
     <script src="js/accordion.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

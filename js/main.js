@@ -16,9 +16,9 @@ const swiper = new Swiper('.swiper', {
   },
 });
 
-const modal = document.querySelector('.js-modal')
+const modal = document.querySelector('.js-Modal-Window')
         const openBtn = document.querySelector('.js-open-modal')
-        const closeBtn = document.querySelector('.js-close-modal')
+        const closeBtn = document.querySelector('.js-close-Modal')
 
         if(modal && openBtn && closeBtn){
             modal.addEventListener('click', (e)=>{

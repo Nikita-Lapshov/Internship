@@ -176,7 +176,7 @@
     font-weight: 800;
     font-size: 120px;
     line-height: 159px;
-    z-index: 6;
+    z-index: 10;
     margin-top: 0;
     margin-bottom: 42px;
     padding-top: 125px;
@@ -191,7 +191,7 @@
     font-size: 20px;
     line-height: 48px;
     letter-spacing: 1px;
-    z-index: 6;
+    z-index: 10;
     text-transform: uppercase;
     padding-left: 56px;
     padding-right: 40px; 
@@ -313,56 +313,43 @@
 
 /* modal */
 
-.js-modal {
+.modal-Window{
     position: fixed;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0,0,0,.7);
     display: none;
-    z-index: 1001; 
+    z-index: 10001;
+    justify-content: center;
+    padding-top: 300px;
+    padding-left: 15px;
 }
-.js-modal.active {
+
+.modal-Window.active{
     display: flex;
-    align-items: center; 
 }
-  
-.modal__form {
+.modal-Window__content{
     max-width: 550px;
     width: 100%;
     max-height: 455px;
-    height: 100%;
+    width: 100%;
     position: relative;
     background: #2C2C2C;
     border: 2px solid #6BC9BD;
     text-align: center;
-    padding: 60px; 
+    padding-top: 45px;
 }
-  
-.modal__title {
-    text-align: center;
-    font-family: 'Uni Neue';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 24px;
-    line-height: 32px;
-    text-transform: uppercase;
-    margin-top: 0;
-    margin-bottom: 21px; 
-    color: #fff;
-}
-  
-.modal__close {
+.modal-Window__button-close{
     position: absolute;
-    top: 35px;
-    right: 35px;
+    top: 36px;
+    right: 38px;
     transform: rotate(45deg);
-    cursor: pointer; 
-    z-index: 2;
+    cursor: pointer;
 }
 
-.modal__close::after{
+.modal-Window__button-close::after{
     content: '';
     position: absolute;
     top: 50%;
@@ -373,7 +360,7 @@
     transform: translate(-50%, -50%);
 }
 
-.modal__close::before{
+.modal-Window__button-close::before{
     content: '';
     position: absolute;
     top: 50%;
@@ -383,35 +370,34 @@
     background-color: #6BC9BD;
     transform: translate(-50%, -50%);
 }
-  
-.modal__wrapper {
-    position: relative;
-    margin-left: auto;
-    margin-right: auto; 
-}
-  
-.form__wrapper-password {
-    margin-bottom: 20px; 
-}
-  
-.form__wrapper-password, .form__name--modification {
-    width: 418px;
+
+.modal__title{
+    font-family: 'Uni Neue';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FFFFFF;   
+    text-transform: uppercase;
 }
 
-.form__wrapper-name{
-    text-align: start;
+.modal-container{
+    display: flex;
+    flex-direction: column;
+    padding-top: 21px;
     max-width: 418px;
     width: 100%;
+    max-height: 210px;
+    height: 100%;
+    margin: auto;
 }
 
-.form__wrapper-password{
-    text-align: start;
-    max-width: 418px;
-    width: 100%;
-    margin-top: 16px;
+.modal-container__label{
+    display: flex;
+    flex-direction: column;
 }
 
-.form__label{
+.modal-container__span{
     font-family: 'Uni Neue';
     font-style: normal;
     font-weight: 500;
@@ -419,13 +405,34 @@
     line-height: 22px;
     letter-spacing: 0.05px;
     color: #FFFFFF;
-}
-
-.form__input-name {
+    text-align: start;
     margin-top: 16px;
 }
 
-.form-btn__button{
+.modal-container__label:last-child{
+    margin-top: -5px;
+}
+
+.modal-container__input{
+    font-family: 'Uni Neue';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.05px;   
+    border: 1px solid #FFFFFF;
+    background-color: #2C2C2C;
+    color: rgba(255, 255, 255, 0.2);
+    padding: 9px 200px 16px 22px;
+    margin-top: 16px;
+}
+
+.modal-button__container{
+    margin-top: 57px;
+    margin-left: 40px;
+}
+
+.modal-button__button{
     background: rgba(107, 201, 189, 0.5);
     height: 10px;
     width: 165px;
@@ -446,7 +453,7 @@
     transition: .3s;
 }
 
-.form-btn__button:hover{
+.modal-button__button:hover{
     font-size: 26px;
 }
 
@@ -457,7 +464,7 @@
     min-height: 714px;
     height: 100%;
     background-image: url(../img/descr@2x.png);
-    margin-top: 90px;
+    margin-top: 22px;
 }
 
 .img__blackout {
@@ -722,7 +729,7 @@
 
 /* registration */
 
-.form-window{
+.registration-window{
     width: 100%;
     min-height: 1040px;
     height: 100%;
@@ -745,7 +752,7 @@
     clip: rect(0 0 0 0)
 }
 
-.form__name{
+.registration__name{
     font-family: 'Uni Neue';
     font-style: normal;
     font-weight: 800;
@@ -758,7 +765,7 @@
     margin-top: 44px;
 }
 
-.form{
+.registration{
     margin: 50px auto;
     max-width: 550px;
     width: 100%;
@@ -768,18 +775,18 @@
     position: relative;
     z-index: 2;
 }
-.form__title{
+.registration__title{
     font-size: 25px;
     text-align: center;
     margin-bottom: 25px;
     text-transform: uppercase;
 }
-.form__input-item{
+.registration__input-item{
     display: block;
 }
 
 
-.form__select {
+.registration__select {
     width: 100%;
     font-family: 'Uni Neue';
     font-style: normal;
@@ -795,7 +802,7 @@
     cursor: pointer;
 }
 
-.form__span{
+.registration__span{
     display: block;
     margin-bottom: 16px;
     margin-top: 16px;
@@ -861,7 +868,7 @@
     display: block;
 }
 
-.form_textarea {
+.registration_textarea {
     width: 100%;
     max-height: 98px;
     height: 100%;
@@ -936,7 +943,7 @@
     display: block;
 }
 
-.form__input{
+.registration__input{
     display: block;
     outline: none;
     border: 1px solid #FFFFFF;
@@ -946,24 +953,24 @@
     color: rgba(255, 255, 255, 0.2);
     background-color: #2C2C2C;
 }
-.form__input.error-input{
+.registration__input.error-input{
     border: 1px solid red;
 }
 
-.form__input-error{
+.registration__input-error{
     display: block;
     color: lightcoral;
     font-size: 16px;
 }
 
 
-.form-application__button {
+.registration-application__button {
     margin-left: 15%;
     margin-top: 35px;
     margin-bottom: 45px;
 }
 
-.form-application__submit{
+.registration-application__submit{
     background: rgba(107, 201, 189, 0.5);
     height: 10px;
     max-width: 257px;
@@ -983,20 +990,20 @@
     transition: 0.3s;
 }
 
-.form__submit:hover{
+.registration__submit:hover{
     font-size: 26px;
 }
 
 /* Contacts */
 
-.Contacts {
+.contacts {
     width: 100%;
     background-color: #2C2C2C;
     display: flex;
     justify-content: center;
 }
 
-.Contacts__main {
+.contacts__main {
     max-width: 1140px;
     width: 100%;
     display: flex;
@@ -1004,7 +1011,7 @@
     justify-content: space-between;
 }
 
-.Contacts__container {
+.contacts__container {
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
@@ -1014,7 +1021,7 @@
     width: 100%;
 }
 
-.Contacts__name {
+.contacts__name {
     font-family: 'Uni Neue';
     font-style: normal;
     font-weight: 800;
@@ -1023,29 +1030,29 @@
     color: #FFFFFF;  
 }
 
-.Contacts__box {
+.contacts__box {
     width: 370px;
     height: 41px;
     display: flex;
     align-items: center;
 }
 
-.Contacts__img-location {
+.contacts__img-location {
     width: 35px;
     fill: #6BC9BD;
 }
 
-.Contacts__img-mail {
+.contacts__img-mail {
     width: 35px;
     fill: #6BC9BD;
 }
 
-.Contacts__img-phone {
+.contacts__img-phone {
     width: 35px;
     fill: #6BC9BD;
 }
 
-.Contacts-text {
+.contacts-text {
     max-width: 243px;
     width: 100%;
     margin-left: 28px;
@@ -1057,7 +1064,7 @@
     color: #FFFFFF;
 }
 
-.Contacts-text__tel{
+.contacts-text__tel{
     font-family: 'Muller';
     font-style: normal;
     font-weight: normal;
@@ -1069,11 +1076,11 @@
     transition: .3s;
 }
 
-.Contacts-text__tel:hover {
+.contacts-text__tel:hover {
     border-bottom: 2px solid #fff;
 }
 
-.Contacts-text__mail{
+.contacts-text__mail{
     font-family: 'Muller';
     font-style: normal;
     font-weight: normal;
@@ -1085,7 +1092,7 @@
     transition: .3s;
 }
 
-.Contacts-text__mail:hover {
+.contacts-text__mail:hover {
     border-bottom: 2px solid #fff;
 }
 
