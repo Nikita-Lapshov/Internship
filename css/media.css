@@ -1,5 +1,5 @@
 @media (max-width:1080px){
-    .social-network{
+    .social-network {
         display: none;
     }
 }
@@ -13,39 +13,39 @@
     } 
 }
 
-@media (max-width:768px){
-    .main{
+@media (max-width:767px){
+    .main {
         margin-top: 113px;
         max-height: 408px;
         height: 100%;
     }
-    .header{
+    .header {
         max-height: 113px;
         height: 100%;
     }
-    .header-logo__img{
+    .header-logo__img {
         max-width: 222px;
         min-height: 50px;
         height: 100%;
     }
-    .social-network{
+    .social-network {
         display: none;
     }
-    .navigation__list{
+    .navigation__list {
         display: flex;
         justify-content: center;
     }
     
-    .description-box__name{
+    .description-box__name {
         font-size: 30px;
         line-height: 40px;
         padding-left: 0px;
     }
-    .description-container{
+    .description-container {
         padding-top: 64px;
         padding-left: 30px;
     }
-    .description-box__text{
+    .description-box__text {
         font-size: 18px;
         line-height: 30px;  
         max-width: 395px;
@@ -55,55 +55,55 @@
         margin-left: 0px;
         margin-top: 20px;
     }
-    .description{
+    .description {
         min-height: 466px;
         height: 100%;
     }
-    .description-icon{
+    .description-icon {
         margin-right: 30px;
     }
 
-    .booking__accordion__name{
+    .booking__accordion__name {
         font-size: 36px;
         line-height: 48px; 
         margin-top: 35px;
     }
-    .wrapper{
+    .wrapper {
         margin-top: 35px;
     }
 
-    .accordion{
+    .accordion {
         max-width: 710px;
         width: 100%;
         margin: auto;
     }
-    .accordion-item__name{
+    .accordion-item__name {
         font-weight: 500;
         font-size: 24px;
         line-height: 29px;
     }
-    .accordion-item__name-choice{
+    .accordion-item__name-choice {
         font-size: 18px;
         line-height: 48px;
     }
-    .accordion-item__application{
+    .accordion-item__application {
         width: 177px;
         height: 10px;
     }
-    .accordion-item__application-button{
+    .accordion-item__application-button {
         font-size: 18px;
         line-height: 48px;
         transition: .3s;
     }
-    .accordion-item__application-button:hover{
+    .accordion-item__application-button:hover {
         font-size: 20px;
     }
-    .form__name{
+    .form__name {
         margin-top: 0px;
         font-size: 30px;
         line-height: 40px;
     }
-    .form{
+    .form {
         max-width: 510px;
         width: 100%;
     }

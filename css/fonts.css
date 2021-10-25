@@ -1,7 +1,6 @@
 @font-face {
     font-family: 'Muller';
-    src: url(../fonts/MullerRegular.woff2) format('woff'),
-        url(../fonts/MullerRegular.woff) format('woff2');
+    src: url(../fonts/MullerRegular.woff) format('woff2');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -9,8 +8,7 @@
 
 @font-face {
     font-family: 'Uni Neue';
-    src: url(../fonts/UniNeueRegular.woff2) format('woff'),
-        url(../fonts/UniNeueRegular.woff) format('woff2');
+    src: url(../fonts/UniNeueRegular.woff) format('woff2');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -18,8 +16,7 @@
 
 @font-face {
     font-family: 'Uni Neue';
-    src: url(../fonts/UniNeueBold.woff2) format('woff'),
-        url(../fonts/UniNeueBold.woff) format('woff2');
+    src: url(../fonts/UniNeueBold.woff) format('woff2');
     font-weight: 700;
     font-style: normal;
     font-display: swap;
@@ -27,8 +24,7 @@
 
 @font-face {
     font-family: 'Uni Neue';
-    src: url(../fonts/UniNeueHeavy.woff2) format('woff'),
-        url(../fonts/UniNeueHeavy.woff) format('woff2');
+    src: url(../fonts/UniNeueHeavy.woff) format('woff2');
     font-weight: 800;
     font-style: normal;
     font-display: swap;
@@ -36,8 +32,7 @@
 
 @font-face {
     font-family: 'Uni Neue';
-    src: url(../fonts/UniNeueBlack.woff2) format('woff'),
-        url(../fonts/UniNeueBlack.woff) format('woff2');
+    src: url(../fonts/UniNeueBlack.woff) format('woff2');
     font-weight: 900;
     font-style: normal;
     font-display: swap;

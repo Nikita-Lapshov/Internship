@@ -26,88 +26,89 @@
                       <a href="#contacts" class="menu__text">КОНТАКТЫ</a></li>
                 </ul>
             </nav>
-            <button class="header__toggle js-menu-toggle">Toggle</button>
             <div class="social-network">
                 <a href="https://www.facebook.com/?_rdr" target="blank" class="social-network__icon"><svg class="social-network__icon-FB">
-                    <use href="img/sprite.svg#FB"></use>
+                    <use href="img/sprite.svg#FB"/>
                   </svg>
                         </a>
                 <a href="https://vk.com/feed" target="blank" class="social-network__icon"><svg class="social-network__icon-vk">
-                    <use href="img/sprite.svg#VK"></use>
+                    <use href="img/sprite.svg#VK"/>
                   </svg></a>
             </div>
         </div>
     </header>
 
-    <div class="first-screen js-first-screen">
-        <div class="swiper first-screen__slider">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide first-screen__slide">
-                    <div class="first-screen__wrapper">
-                      <h2 class="first-screen__text">CONCERT HOME</h2>
-                        <p class="first-screen__description">
-                          ТЕКСТ БАННЕРА МОЖЕТ ВКЛЮЧАТЬ В СЕБЯ НЕСКОЛЬКО ПРЕДЛОЖЕНИЙ.
-                          ВЫРАВНИВАНИЕ
-                          ПО ЦЕНТРУ. ТЕКСТОВЫЙ БЛОК НА ДЕСКТОПЕ
-                        </p>
+    <main>
+        <div class="first-screen js-first-screen">
+            <div class="swiper first-screen__slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide first-screen__slide">
+                        <div class="first-screen__wrapper">
+                          <h2 class="first-screen__text">CONCERT HOME</h2>
+                            <p class="first-screen__description">
+                              ТЕКСТ БАННЕРА МОЖЕТ ВКЛЮЧАТЬ В СЕБЯ НЕСКОЛЬКО ПРЕДЛОЖЕНИЙ.
+                              ВЫРАВНИВАНИЕ
+                              ПО ЦЕНТРУ. ТЕКСТОВЫЙ БЛОК НА ДЕСКТОПЕ
+                            </p>
+                        </div>
+                      <img src="img/main.png" class="first-screen__img" alt="Затемненное фото концерта с толпой людей">
                     </div>
-                  <img src="img/main.png" class="first-screen__img" alt="Затемненное фото концерта с толпой людей">
+                    <div class="swiper-slide first-screen__slide">
+                        <div class="first-screen__wrapper">
+                          <h2 class="first-screen__text">CONCERT HOME</h2>
+                            <p class="first-screen__description">
+                              ТЕКСТ БАННЕРА МОЖЕТ ВКЛЮЧАТЬ В СЕБЯ НЕСКОЛЬКО ПРЕДЛОЖЕНИЙ.
+                              ВЫРАВНИВАНИЕ
+                              ПО ЦЕНТРУ. ТЕКСТОВЫЙ БЛОК НА ДЕСКТОПЕ
+                            </p>
+                        </div>
+                      <img src="img/main.png" class="first-screen__img" alt="Затемненное фото концерта с толпой людей">
+                    </div>
+                    <div class="swiper-slide first-screen__slide">
+                        <div class="first-screen__wrapper">
+                          <h2 class="first-screen__text">CONCERT HOME</h2>
+                            <p class="first-screen__description">
+                              ТЕКСТ БАННЕРА МОЖЕТ ВКЛЮЧАТЬ В СЕБЯ НЕСКОЛЬКО ПРЕДЛОЖЕНИЙ.
+                              ВЫРАВНИВАНИЕ
+                              ПО ЦЕНТРУ. ТЕКСТОВЫЙ БЛОК НА ДЕСКТОПЕ
+                            </p>
+                        </div>
+                      <img src="img/main.png" class="first-screen__img" alt="Затемненное фото концерта с толпой людей">
+                    </div>
                 </div>
-                <div class="swiper-slide first-screen__slide">
-                  <div class="first-screen__wrapper">
-                    <h2 class="first-screen__text">CONCERT HOME</h2>
-                      <p class="first-screen__description">
-                        ТЕКСТ БАННЕРА МОЖЕТ ВКЛЮЧАТЬ В СЕБЯ НЕСКОЛЬКО ПРЕДЛОЖЕНИЙ.
-                        ВЫРАВНИВАНИЕ
-                        ПО ЦЕНТРУ. ТЕКСТОВЫЙ БЛОК НА ДЕСКТОПЕ
-                      </p>
-                  </div>
-                  <img src="img/main.png" class="first-screen__img" alt="Затемненное фото концерта с толпой людей">
-                </div>
-                <div class="swiper-slide first-screen__slide">
-                  <div class="first-screen__wrapper">
-                    <h2 class="first-screen__text">CONCERT HOME</h2>
-                      <p class="first-screen__description">
-                        ТЕКСТ БАННЕРА МОЖЕТ ВКЛЮЧАТЬ В СЕБЯ НЕСКОЛЬКО ПРЕДЛОЖЕНИЙ.
-                        ВЫРАВНИВАНИЕ
-                        ПО ЦЕНТРУ. ТЕКСТОВЫЙ БЛОК НА ДЕСКТОПЕ
-                      </p>
-                  </div>
-                  <img src="img/main.png" class="first-screen__img" alt="Затемненное фото концерта с толпой людей">
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-modal">
+                <button class="swiper-modal-btn js-open-modal">ОСТАВИТЬ ЗАЯВКУ</button>
+            </div>
+            <button class="swiper-button swiper-button--prev"></button>
+            <button class="swiper-button swiper-button--next"></button>
+        </div>
+        <div class="modal-Window js-Modal-Window">
+            <div class="modal-Window__content">
+                <button class="modal-Window__button-close js-close-Modal"></button>
+                <div class="modal__content js-modal">
+                    <h2 class="modal__title">авторизация</h2>
+                    <div class="modal-container">
+                        <label class="modal-container__label">
+                            <span class="modal-container__span">Логин</span>
+                            <input type="email" class="modal-container__input" placeholder="Введите логин">
+                        </label>
+                        <label class="modal-container__label">
+                            <span class="modal-container__span">Пароль</span>
+                            <input type="password" class="modal-container__input" placeholder="Введите пароль">
+                        </label>
+                    </div>
+                    <div class="modal-button__container">
+                        <button class="modal-button__button">ОТПРАВИТЬ</button>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="swiper-pagination"></div>
-        <div class="swiper-modal">
-            <button class="swiper-modal-btn js-open-modal">ОСТАВИТЬ ЗАЯВКУ</button>
+        <div class="application">
+            <button class="application__button js-open-modal">ОСТАВИТЬ ЗАЯВКУ</button>
         </div>
-        <button class="swiper-button swiper-button--prev"></button>
-        <button class="swiper-button swiper-button--next"></button>
-    </div>
-    <div class="modal-Window js-Modal-Window">
-        <div class="modal-Window__content">
-            <button class="modal-Window__button-close js-close-Modal"></button>
-            <div class="modal__content js-modal">
-                <h2 class="modal__title">авторизация</h2>
-                <div class="modal-container">
-                    <label class="modal-container__label">
-                        <span class="modal-container__span">Логин</span>
-                        <input type="email" class="modal-container__input" placeholder="Введите логин">
-                    </label>
-                    <label class="modal-container__label">
-                        <span class="modal-container__span">Пароль</span>
-                        <input type="password" class="modal-container__input" placeholder="Введите пароль">
-                    </label>
-                </div>
-                <div class="modal-button__container">
-                    <button class="modal-button__button">ОТПРАВИТЬ</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="application">
-        <button class="application__button js-open-modal">ОСТАВИТЬ ЗАЯВКУ</button>
-    </div>
+    </main>
 
     <section class="description img__blackout">
             <div class="description-container">
@@ -174,9 +175,7 @@
                     </div>
                     <div class="accordion-item js-accordion-item">
                         <div class="accordion-item__trigger js-accordion-item__trigger">
-                            <h2 class="accordion-item__name">
-                                <span class="accordion-icon"></span>
-                            Площадка 3.500 мест</h2>
+                            <h2 class="accordion-item__name"><span class="accordion-icon"></span>Площадка 3.500 мест</h2>
                         </div>
                         <div class="accordion-item__content js-accordion-item__content">
                             <div class="accordion-item__box">
@@ -196,9 +195,7 @@
                     </div>
                     <div class="accordion-item js-accordion-item">
                         <div class="accordion-item__trigger js-accordion-item__trigger">
-                            <h2 class="accordion-item__name">
-                                <span class="accordion-icon"></span>
-                            Площадка 3.500 мест</h2>
+                            <h2 class="accordion-item__name"><span class="accordion-icon"></span>Площадка 3.500 мест</h2>
                         </div>
                         <div class="accordion-item__content js-accordion-item__content">
                             <div class="accordion-item__box">
@@ -218,9 +215,7 @@
                     </div>
                     <div class="accordion-item js-accordion-item">
                         <div class="accordion-item__trigger js-accordion-item__trigger">
-                            <h2 class="accordion-item__name">
-                                <span class="accordion-icon"></span>
-                            Площадка 3.500 мест</h2>
+                            <h2 class="accordion-item__name"><span class="accordion-icon"></span>Площадка 3.500 мест</h2>
                         </div>
                         <div class="accordion-item__content js-accordion-item__content">
                             <div class="accordion-item__box">
@@ -280,7 +275,7 @@
             </div>
             <div class="registration__input-item">
                 <p class="registration__span">Комментарий:</p>
-                <textarea cols="30" rows="10" class="registration_textarea" placeholder="Введите комментарий..."></textarea>
+                <textarea cols="30" rows="10" class="registration__textarea" placeholder="Введите комментарий..."></textarea>
             </div>
             <label class="Personal-Information">
                 <input class="registration__input-checkbox visually-hidden" name="agree" type="checkbox">
@@ -297,19 +292,19 @@
                 <h2 class="contacts__name">КОНТАКТЫ</h2>
                 <div class="contacts__box">
                     <svg class="contacts__img-location">
-                        <use href="img/sprite.svg#location"></use>
+                        <use href="img/sprite.svg#location"/>
                       </svg>
                     <p class="contacts-text">ул. Арбат, 1а, Москва 119019, Россия</p>
                 </div>
                 <div class="contacts__box">
                     <svg class="contacts__img-phone">
-                        <use href="img/sprite.svg#phone"></use>
+                        <use href="img/sprite.svg#phone"/>
                       </svg>
                     <p class="contacts-text"><a href="tel:+7(495)000-00-00" class="contacts-text__tel">+7(495) 000-00-00</a></p>
                 </div>
                 <div class="contacts__box">
                       <svg class="contacts__img-mail">
-                        <use href="img/sprite.svg#mail"></use>
+                        <use href="img/sprite.svg#mail"/>
                       </svg>
                     <p class="contacts-text"><a href="mailto:info@mysite.ru" class="contacts-text__mail">info@mysite.ru</a></p>
                 </div>

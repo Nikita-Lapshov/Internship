@@ -4,6 +4,16 @@
     box-sizing: border-box;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0)
+}
 
 /* header */
 
@@ -24,7 +34,7 @@
     transition: .3s;
 }
 
-.js-header__dark{
+.js-header__dark {
     background-color: #2C2C2C;
 }
 
@@ -62,7 +72,7 @@
     align-items: center;
 }
 
-.menu:not(:last-child):after{
+.menu:not(:last-child):after {
     content: "";
     margin-left: 28px;
     margin-right: 25px;
@@ -73,7 +83,7 @@
     transform: rotate(17.79deg);
 }
 
-.js-header__dark .menu:not(:last-child):after{
+.js-header__dark .menu:not(:last-child):after {
     background-color: #6BC9BD;
 }
 
@@ -94,7 +104,7 @@
     transition: .3s;
 }
 
-.header__toggle{
+.header__toggle {
     display: none;
 }
 
@@ -109,17 +119,17 @@
     margin-bottom: 25px;
 }
 
-.social-network__icon{
+.social-network__icon {
     fill: #fff;
     transition: 0.3s;
 }
 
-.social-network__icon:hover{
+.social-network__icon:hover {
     fill: #2C2C2C;
 }
 
 
-.js-header__dark .social-network__icon:hover{
+.js-header__dark .social-network__icon:hover {
     fill: #6BC9BD;
 }
 
@@ -252,7 +262,7 @@
     background-color: transparent; 
 }
 
-.swiper-slide{
+.swiper-slide {
     border-bottom: 4px solid #6BC9BD;
 }
 
@@ -277,7 +287,7 @@
 }
   
 
-.swiper-modal{
+.swiper-modal {
     position: relative;
     z-index: 96;
     display: block;
@@ -285,7 +295,7 @@
     margin-top: -101px; 
 }
 
-.swiper-modal-btn{
+.swiper-modal-btn  {
     background: rgba(107, 201, 189, 0.5);
     height: 10px;
     width: 257px;
@@ -306,14 +316,14 @@
     margin-right: auto;
 }
 
-.swiper-modal-btn:hover{
+.swiper-modal-btn:hover {
     font-size: 26px;
 }
 
 
 /* modal */
 
-.modal-Window{
+.modal-Window {
     position: fixed;
     top: 0;
     right: 0;
@@ -327,10 +337,10 @@
     padding-left: 15px;
 }
 
-.modal-Window.active{
+.modal-Window.active {
     display: flex;
 }
-.modal-Window__content{
+.modal-Window__content {
     max-width: 550px;
     width: 100%;
     max-height: 455px;
@@ -341,7 +351,7 @@
     text-align: center;
     padding-top: 45px;
 }
-.modal-Window__button-close{
+.modal-Window__button-close {
     position: absolute;
     top: 36px;
     right: 38px;
@@ -349,7 +359,7 @@
     cursor: pointer;
 }
 
-.modal-Window__button-close::after{
+.modal-Window__button-close::after {
     content: '';
     position: absolute;
     top: 50%;
@@ -360,7 +370,7 @@
     transform: translate(-50%, -50%);
 }
 
-.modal-Window__button-close::before{
+.modal-Window__button-close::before {
     content: '';
     position: absolute;
     top: 50%;
@@ -371,7 +381,7 @@
     transform: translate(-50%, -50%);
 }
 
-.modal__title{
+.modal__title {
     font-family: 'Uni Neue';
     font-style: normal;
     font-weight: 800;
@@ -381,7 +391,7 @@
     text-transform: uppercase;
 }
 
-.modal-container{
+.modal-container {
     display: flex;
     flex-direction: column;
     padding-top: 21px;
@@ -392,12 +402,12 @@
     margin: auto;
 }
 
-.modal-container__label{
+.modal-container__label {
     display: flex;
     flex-direction: column;
 }
 
-.modal-container__span{
+.modal-container__span {
     font-family: 'Uni Neue';
     font-style: normal;
     font-weight: 500;
@@ -409,11 +419,11 @@
     margin-top: 16px;
 }
 
-.modal-container__label:last-child{
+.modal-container__label:last-child {
     margin-top: -5px;
 }
 
-.modal-container__input{
+.modal-container__input {
     font-family: 'Uni Neue';
     font-style: normal;
     font-weight: 500;
@@ -427,12 +437,12 @@
     margin-top: 16px;
 }
 
-.modal-button__container{
+.modal-button__container {
     margin-top: 57px;
     margin-left: 40px;
 }
 
-.modal-button__button{
+.modal-button__button {
     background: rgba(107, 201, 189, 0.5);
     height: 10px;
     width: 165px;
@@ -453,7 +463,7 @@
     transition: .3s;
 }
 
-.modal-button__button:hover{
+.modal-button__button:hover {
     font-size: 26px;
 }
 
@@ -492,7 +502,7 @@
     z-index: 2;
 }
 
-.description-box__text{
+.description-box__text {
     max-width: 700px;
     width: 100%;
     font-family: 'Uni Neue';
@@ -517,7 +527,7 @@
     padding-top: 185px;
 }
 
-.description-box{
+.description-box {
     max-width: 900px;
     width: 100%;
     min-height: 376px;
@@ -601,6 +611,7 @@
 .active-accordion {
     display: block;
 }
+
 .js-accordion-item--active .js-accordion-item__content {
     display: block;
 }
@@ -609,7 +620,7 @@
     display: flex;
 }
 
-.accordion-item__name{
+.accordion-item__name {
     font-family: 'Uni Neue';
     font-style: normal;
     font-weight: 800;
@@ -631,7 +642,8 @@
     margin-left: 60px;
     display: flex;
 }
-.accordion-item__name-choice__name{
+
+.accordion-item__name-choice__name {
     font-family: 'Uni Neue';
     font-style: normal;
     font-weight: 800;
@@ -652,8 +664,7 @@
 .accordion-item__application-button {
     background: rgba(107, 201, 189, 0.5);
     height: 10px;
-    max-width: 257px;
-    width: 100%;
+    min-width: 257px;
     border: none;
     cursor: pointer;
     display: flex;
@@ -673,7 +684,7 @@
     font-size: 26px;
 }
 
-.accordion-item__name{
+.accordion-item__name {
     font-family: 'Uni Neue';
     font-style: normal;
     font-weight: 500;
@@ -697,62 +708,45 @@
     transition: .3s;
 }
 
-.accordion-icon:hover{
+.accordion-icon:hover {
     background-color: #fff;
 }
 
-.accordion-icon::after {
+.accordion-icon::after,.accordion-icon::before {
     content: '';
     position: absolute;
     top: 50%;
     left: 50%;
+    background-color: black;
+    transform: translate(-50%, -50%);
+}
+
+.accordion-icon::after {
     width: 28px;
     height: 6px;
-    background-color: black;
-    transform: translate(-50%, -50%);
 }
 
-.accordion-icon::before{
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
+.accordion-icon::before {
     width: 6px;
     height: 28px;
-    background-color: black;
-    transform: translate(-50%, -50%);
 }
 
-.js-accordion-item--active .accordion-icon:before{
+.js-accordion-item--active .accordion-icon:before {
     background-color: transparent;
 }
 
 /* registration */
 
-.registration-window{
+.registration-window {
     width: 100%;
     min-height: 1040px;
     height: 100%;
     border-bottom: 4px solid #6BC9BD;
     background-image: url(../img/registration.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
     overflow: hidden;
 }
 
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    padding: 0;
-    overflow: hidden;
-    border: 0;
-    clip: rect(0 0 0 0)
-}
-
-.registration__name{
+.registration__name {
     font-family: 'Uni Neue';
     font-style: normal;
     font-weight: 800;
@@ -765,7 +759,7 @@
     margin-top: 44px;
 }
 
-.registration{
+.registration {
     margin: 50px auto;
     max-width: 550px;
     width: 100%;
@@ -775,13 +769,15 @@
     position: relative;
     z-index: 2;
 }
+
 .registration__title{
     font-size: 25px;
     text-align: center;
     margin-bottom: 25px;
     text-transform: uppercase;
 }
-.registration__input-item{
+
+.registration__input-item {
     display: block;
 }
 
@@ -802,7 +798,7 @@
     cursor: pointer;
 }
 
-.registration__span{
+.registration__span {
     display: block;
     margin-bottom: 16px;
     margin-top: 16px;
@@ -829,7 +825,7 @@
     cursor: pointer;
 }
 
-.gender-label__span:hover::before{
+.gender-label__span:hover::before {
     box-shadow: 1px 1px 3px #6BC9BD, -1px -1px 3px #6BC9BD;
 }
 
@@ -868,7 +864,7 @@
     display: block;
 }
 
-.registration_textarea {
+.registration__textarea {
     width: 100%;
     max-height: 98px;
     height: 100%;
@@ -887,7 +883,7 @@
     outline: none;
 }
 
-.error-text{
+.error-text {
     font-size: 16px;
     color: red;
 }
@@ -898,7 +894,7 @@
 }
 
 
-.Personal-Information__span{
+.Personal-Information__span {
     position: relative;
     padding-left: 45px;
     font-family: 'Uni Neue';
@@ -912,11 +908,11 @@
     cursor: pointer;
 }
 
-.Personal-Information__span:hover:before{
+.Personal-Information__span:hover:before {
     box-shadow: 1px 1px 3px #6BC9BD, -1px -1px 3px #6BC9BD;
 }
 
-.Personal-Information__span::before{
+.Personal-Information__span::before {
     content: "";
     position: absolute;
     top: 0;
@@ -939,11 +935,11 @@
     display: none;
 }
 
-.visually-hidden:checked+.Personal-Information__span:after{
+.visually-hidden:checked+.Personal-Information__span:after {
     display: block;
 }
 
-.registration__input{
+.registration__input {
     display: block;
     outline: none;
     border: 1px solid #FFFFFF;
@@ -953,11 +949,11 @@
     color: rgba(255, 255, 255, 0.2);
     background-color: #2C2C2C;
 }
-.registration__input.error-input{
+.registration__input.error-input {
     border: 1px solid red;
 }
 
-.registration__input-error{
+.registration__input-error {
     display: block;
     color: lightcoral;
     font-size: 16px;
@@ -970,11 +966,10 @@
     margin-bottom: 45px;
 }
 
-.registration-application__submit{
+.registration-application__submit {
     background: rgba(107, 201, 189, 0.5);
     height: 10px;
-    max-width: 257px;
-    width: 100%;
+    min-width: 257px;
     border: none;
     cursor: pointer;
     display: flex;
@@ -990,7 +985,7 @@
     transition: 0.3s;
 }
 
-.registration__submit:hover{
+.registration__submit:hover {
     font-size: 26px;
 }
 
@@ -1064,7 +1059,7 @@
     color: #FFFFFF;
 }
 
-.contacts-text__tel{
+.contacts-text__tel {
     font-family: 'Muller';
     font-style: normal;
     font-weight: normal;
@@ -1080,7 +1075,7 @@
     border-bottom: 2px solid #fff;
 }
 
-.contacts-text__mail{
+.contacts-text__mail {
     font-family: 'Muller';
     font-style: normal;
     font-weight: normal;
@@ -1120,7 +1115,7 @@
     color: #FFFFFF;
 }
 
-.footer-box__text_kompaniya{
+.footer-box__text_kompaniya {
     font-family: 'Muller';
     font-style: normal;
     font-weight: normal;
